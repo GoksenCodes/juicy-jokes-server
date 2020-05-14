@@ -5,7 +5,10 @@ module.exports = (sequelize, DataTypes) => {
     {
       setup: DataTypes.TEXT,
       punchline: DataTypes.TEXT,
-      likes: DataTypes.INTEGER
+      likes: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0
+      }
     },
     {}
   );

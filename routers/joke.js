@@ -4,12 +4,6 @@ const router = new Router();
 const axios = require("axios");
 
 router.get("/", async (req, res, next) => {
-  // function getJoke() {
-  //   return axios
-  //   .get( "https://official-joke-api.appspot.com/jokes/programming/random")
-  //   .then(latestJoke => latestJoke.data)
-  //   .catch(err => console.error(err))
-  // }
   const latestJoke = await axios.get(
     "https://official-joke-api.appspot.com/jokes/programming/random"
   );
