@@ -62,7 +62,7 @@ npx sequelize-cli db:migrate
 npx sequelize-cli db:seed:all
 ```
 
-6. start server with `node` (recommended for development)
+6. start server 
 
 ```
 node.index.js
@@ -76,4 +76,9 @@ node.index.js
 | GET    | '/'                        | Get a random joke                   | none                  | no   |
 | POST   | '/    '                    | Post a joke                         | none                  | no   |
 
+## Built With
 
+* Node.js
+* Express
+* Sequilize
+* Postgres
