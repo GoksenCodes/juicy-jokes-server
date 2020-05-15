@@ -74,7 +74,7 @@ node.index.js
 | Method | Path                       | Purpose                             | required parameters   | auth |
 | ------ | -------------------------- | ----------------------------------- | --------------------- | ---- |
 | GET    | '/'                        | Get a random joke                   | none                  | no   |
-| POST   | '/    '                    | Post a joke                         | none                  | no   |
+| POST   | '/    '                    | Post a joke                         | setup,punchline       | no   |
 
 ## Built With
 
