@@ -48,14 +48,6 @@ The default assumes a postgres database with
 
 5. Create database, run migrations & seed data
 
-`package.json` contains a script for this
-
-```bash
-npm run initdev
-```
-
-Or run the commands seperately
-
 ```bash
 npx sequelize-cli db:create
 npx sequelize-cli db:migrate
