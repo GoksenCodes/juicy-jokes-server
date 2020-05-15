@@ -21,4 +21,25 @@ router.get("/", async (req, res, next) => {
   }
 });
 
+router.post("/", async (req, res, next) => {
+  try {
+    console.log("REQ BODY", req);
+    const { setup, punchline } = req.body;
+
+    if (!setup || !punchline) {
+      res.status(400).send("missing information");
+    } else {
+      const newJoke = await Joke.create({
+        setup,
+        punchline
+      });
+      return res
+        .status(201)
+        .send({ message: "New joke is posted successfully", newJoke });
+    }
+  } catch (e) {
+    next(e);
+  }
+});
+
 module.exports = router;
